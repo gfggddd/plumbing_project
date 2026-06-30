@@ -6,7 +6,7 @@ interface LogoProps {
 }
 
 export function Logo({ variant = "full", className = "" }: LogoProps) {
-  const size = variant === "icon" ? 52 : variant === "full" ? 48 : 44
+  const size = variant === "icon" ? 72 : variant === "full" ? 68 : 60
 
   const Mark = () => (
     <Image
@@ -29,9 +29,9 @@ export function Logo({ variant = "full", className = "" }: LogoProps) {
 
   if (variant === "compact") {
     return (
-      <div className={`inline-flex items-center gap-2 ${className}`}>
+      <div className={`inline-flex items-center gap-2.5 ${className}`}>
         <Mark />
-        <span className="text-xl font-bold tracking-tight">
+        <span className="text-2xl font-bold tracking-tight">
           <span className="text-[#0066CC]">Тез</span>
           <span className="text-[#0A2540]">Суу</span>
         </span>
@@ -43,11 +43,11 @@ export function Logo({ variant = "full", className = "" }: LogoProps) {
     <div className={`inline-flex items-center gap-3 ${className}`}>
       <Mark />
       <div className="flex flex-col">
-        <span className="text-xl font-bold leading-tight tracking-tight">
+        <span className="text-2xl font-bold leading-tight tracking-tight">
           <span className="text-[#0066CC]">Тез</span>
           <span className="text-[#0A2540]">Суу</span>
         </span>
-        <span className="text-xs tracking-wide text-[#6B7280]">Сантехника 24/7</span>
+        <span className="text-sm tracking-wide text-[#6B7280]">Сантехника 24/7</span>
       </div>
     </div>
   )

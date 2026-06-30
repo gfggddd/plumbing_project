@@ -24,7 +24,7 @@ const installationServices = [
   {
     title: "Подключение стиральной машины",
     desc: "Правильное подключение бытовой техники к водопроводу и канализации.",
-    image: "/images/services/faucet-install.jpg",
+    image: "/images/services/washing-machine.png",
   },
   {
     title: "Установка водонагревателя",
@@ -52,7 +52,7 @@ const repairServices = [
   {
     title: "Ремонт бачка унитаза",
     desc: "Замена арматуры, клапанов. Устранение течи бачка.",
-    image: "/images/services/toilet-install.jpg",
+    image: "/images/services/toilet-tank-repair.png",
   },
   {
     title: "Замена старых труб",
@@ -70,17 +70,17 @@ const complexServices = [
   {
     title: "Установка котлов",
     desc: "Монтаж газовых и электрических котлов. Обвязка системы.",
-    image: "/images/services/water-heater.jpg",
+    image: "/images/services/boiler-install.png",
   },
   {
     title: "Прокладка труб",
     desc: "Полная разводка труб в новостройках и при капремонте.",
-    image: "/images/services/pipe-repair.jpg",
+    image: "/images/services/pipe-layout.png",
   },
   {
     title: "Фильтрация воды",
     desc: "Монтаж фильтров грубой и тонкой очистки. Системы осмоса.",
-    image: "/images/services/faucet-install.jpg",
+    image: "/images/services/water-filter.png",
   },
 ]
 
