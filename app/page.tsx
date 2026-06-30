@@ -3,6 +3,7 @@ import { Phone, MessageCircle, CheckCircle2, Clock, Users, Shield, Wrench, Dropl
 import { Logo } from "@/components/logo"
 import { MobileNav } from "@/components/mobile-nav"
 import { FAQSection } from "@/components/faq-section"
+import { AiChat, AiChatTrigger } from "@/components/ai-chat"
 
 const installationServices = [
   {
@@ -23,7 +24,7 @@ const installationServices = [
   {
     title: "Подключение стиральной машины",
     desc: "Правильное подключение бытовой техники к водопроводу и канализации.",
-    image: "/images/services/faucet-install.jpg",
+    image: "/images/services/washing-machine.png",
   },
   {
     title: "Установка водонагревателя",
@@ -45,13 +46,13 @@ const repairServices = [
   },
   {
     title: "Ремонт протечек труб",
-    desc: "Быстрая ликвидация протечек. Замена прокладок, картриджей.",
-    image: "/images/services/pipe-repair.jpg",
+    desc: "Быстрая ликвидация протечек. Замена прокладок, картриджей, сифонов.",
+    image: "/images/services/sink-repair.jpg",
   },
   {
     title: "Ремонт бачка унитаза",
     desc: "Замена арматуры, клапанов. Устранение течи бачка.",
-    image: "/images/services/toilet-install.jpg",
+    image: "/images/services/toilet-tank-repair.png",
   },
   {
     title: "Замена старых труб",
@@ -69,17 +70,17 @@ const complexServices = [
   {
     title: "Установка котлов",
     desc: "Монтаж газовых и электрических котлов. Обвязка системы.",
-    image: "/images/services/water-heater.jpg",
+    image: "/images/services/boiler-install.png",
   },
   {
     title: "Прокладка труб",
     desc: "Полная разводка труб в новостройках и при капремонте.",
-    image: "/images/services/pipe-repair.jpg",
+    image: "/images/services/pipe-layout.png",
   },
   {
     title: "Фильтрация воды",
     desc: "Монтаж фильтров грубой и тонкой очистки. Системы осмоса.",
-    image: "/images/services/faucet-install.jpg",
+    image: "/images/services/water-filter.png",
   },
 ]
 
@@ -182,16 +183,12 @@ export default function LandingPage() {
               <Phone className="h-5 w-5" />
               Позвонить
             </a>
-            <a
-              href="https://wa.me/996222939622?text=Здравствуйте!%20Нужна%20помощь%20сантехника"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex w-full items-center justify-center gap-2 rounded-2xl bg-emerald-500 px-6 py-3.5 text-base font-semibold text-white hover:bg-emerald-600 sm:w-auto sm:px-8 sm:py-4"
-            >
-              <MessageCircle className="h-5 w-5" />
-              WhatsApp
-            </a>
+            <AiChatTrigger className="flex w-full items-center justify-center gap-2 rounded-2xl bg-emerald-500 px-6 py-3.5 text-base font-semibold text-white hover:bg-emerald-600 sm:w-auto sm:px-8 sm:py-4" />
           </div>
+
+          <p className="mb-8 text-xs text-slate-500">
+            Опишите проблему ИИ-помощнику — он подскажет решение и подготовит заявку для мастера
+          </p>
 
           <div className="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1.5">
             <span className="relative flex h-2.5 w-2.5">
@@ -376,7 +373,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="border-t border-slate-200 pt-6 text-center">
-            <p className="text-xs text-slate-500">2024 СантехБишкек. Все права защищены.</p>
+            <p className="text-xs text-slate-500">2024 ТезСуу — Сантехника в Бишкеке. Все права защищены.</p>
           </div>
         </div>
       </footer>
@@ -391,6 +388,9 @@ export default function LandingPage() {
       >
         <MessageCircle className="h-6 w-6" />
       </a>
+
+      {/* AI Chat assistant */}
+      <AiChat />
     </div>
   )
 }

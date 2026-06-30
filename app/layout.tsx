@@ -7,7 +7,7 @@ const _geist = Geist({ subsets: ["latin", "cyrillic"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Сантехник Бишкек - Вызов сантехника на дом за 25 минут | СантехБишкек',
+  title: 'Сантехник Бишкек - Вызов сантехника на дом за 25 минут | ТезСуу',
   description: 'Срочный вызов сантехника в Бишкеке. Устранение засоров, ремонт труб, установка унитаза, смесителя, водонагревателя. 200+ мастеров. Выезд 300 сом. Работаем 24/7.',
   keywords: [
     'сантехник бишкек',
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     'монтаж батарей бишкек ',
     'теплый пол бишкек бишкек '
   ],
-  authors: [{ name: 'СантехБишкек' }],
-  creator: 'СантехБишкек',
-  publisher: 'СантехБишкек',
+  authors: [{ name: 'ТезСуу' }],
+  creator: 'ТезСуу',
+  publisher: 'ТезСуу',
   formatDetection: {
     telephone: true,
     email: false,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ru_KG',
     url: 'https://santehbishkek.kg',
-    siteName: 'СантехБишкек',
+    siteName: 'ТезСуу',
     title: 'Сантехник Бишкек - Вызов сантехника на дом за 25 минут',
     description: 'Срочный вызов сантехника в Бишкеке. 200+ мастеров по всему городу. Устранение засоров, ремонт труб, установка сантехники. Выезд 300 сом.',
     images: [
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'СантехБишкек - Сантехнические услуги в Бишкеке',
+        alt: 'ТезСуу - Сантехнические услуги в Бишкеке',
       },
     ],
   },
@@ -112,7 +112,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "name": "СантехБишкек",
+              "name": "ТезСуу",
               "description": "Сантехнические услуги в Бишкеке. Устранение засоров, ремонт труб, установка сантехники.",
               "url": "https://santehbishkek.kg",
               "telephone": "+996222939622",
